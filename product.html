@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>karkareco</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap-icons.css" rel="stylesheet">
+   
+    <!-- Custom styles for this template -->
+    <link href="./bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="./assets/css/navbar.css" rel="stylesheet">
+    <link href="./assets/css/footer.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header class="d-flex align-items-center p-3">
+        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+          <img src="./assets/images/logo.png" alt="karkareco">
+        </a>
+      </header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown" id="myDropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                <ul class="dropdown-menu">
+                  <li> <a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
+                  <li> <a class="dropdown-item" href="#"> Dropdown item 2 &raquo; </a>
+                    <ul class="submenu dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                      <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                      <li><a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+                        <ul class="submenu dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Multi level 1</a></li>
+                          <li><a class="dropdown-item" href="#">Multi level 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                      <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Specials</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Express checkout</a></li>
+            </ul>
+            <ul class="navbar-nav me-3">
+              <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-person"></i> My account</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-cart-check"></i> Cart</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <div class="row justify-content-md-center mt-4">
+          <div class="col-5">
+            <img class="img-fluid" src="https://picsum.photos/id/237/500/600" alt="">
+          </div>
+          <div class="col-5">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Consectetur</li>
+              </ol>
+            </nav>
+
+            <h4>Consectetur</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta vitae orci ac pellentesque. Morbi nulla lacus, faucibus et volutpat vitae, mollis nec neque. Nam tristique nibh id eros cursus, ac sollicitudin sem condimentum. Fusce in consequat felis, non consectetur ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam efficitur nibh et ipsum cursus sodales. Nunc ornare blandit erat.</p>
+            
+            <p><span>Item Number:</span> <span class="fst-italic">21334-4334</span></p>
+            <p><span>Price:</span> <span class="fst-italic">&dollar;22.32</span></p>
+            <div class="row mb-2">
+              <label class="col-sm-3 col-form-label">Size/Color:</label>
+              <div class="col">
+                <select class="form-select" aria-label=".form-select-sm example">
+                  <option value="1" selected>One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <label class="col-sm-3 col-form-label">Quantity:</label>
+              <div class="col">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-sm mt-3"><i class="bi bi-cart-check"></i> Add to cart</button>
+          </div>
+        </div>
+
+        <div class="row justify-content-md-center mt-5">
+          <div class="col-10">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-description-tab" data-bs-toggle="tab" data-bs-target="#nav-description" type="button" role="tab" aria-controls="nav-description" aria-selected="true">Description</button>
+                <button class="nav-link" id="nav-shipping-tab" data-bs-toggle="tab" data-bs-target="#nav-shipping" type="button" role="tab" aria-controls="nav-shipping" aria-selected="false">Shipping</button>
+                <button class="nav-link" id="nav-alternateshipping-tab" data-bs-toggle="tab" data-bs-target="#nav-alternateshipping" type="button" role="tab" aria-controls="nav-alternateshipping" aria-selected="false">Alternate Shipping</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-description" role="tabpanel" aria-labelledby="nav-description-tab">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a malesuada dolor. Etiam consectetur in magna nec pharetra. Nulla facilisi. Praesent mattis lacinia eros eget placerat. Sed iaculis, ipsum vel rhoncus laoreet, ligula massa malesuada lacus, vitae mollis odio risus et massa. Nulla vulputate eget lorem eget varius. Proin luctus semper ullamcorper. Curabitur non eros a leo tincidunt scelerisque in eget lacus. Ut dui justo, imperdiet ullamcorper rhoncus non, hendrerit porta lorem. Cras nec semper urna. Vestibulum eget elit vel lacus sollicitudin pretium ut at ligula. Nullam tempus ipsum ut neque accumsan, nec porta dolor posuere. Fusce eget porttitor metus, fermentum semper nisl. Maecenas sollicitudin blandit orci, vel convallis nisl convallis at.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="nav-shipping" role="tabpanel" aria-labelledby="nav-shipping-tab">
+                <p>
+                  Morbi eu blandit leo. Quisque feugiat sapien ut placerat tincidunt. Maecenas sed augue quis ipsum fringilla tristique quis id augue. Quisque congue purus vitae metus viverra, quis viverra nunc efficitur. Quisque accumsan pulvinar dictum. Curabitur vehicula suscipit sem, a dictum diam hendrerit ut. Quisque mauris neque, interdum vel orci quis, placerat tincidunt enim. Proin odio risus, rhoncus quis imperdiet id, fringilla ut lacus.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="nav-alternateshipping" role="tabpanel" aria-labelledby="nav-alternateshipping-tab">
+                <p>
+                  Fusce sed nisi eu justo vehicula viverra iaculis ac augue. Praesent turpis mi, viverra id ligula at, tempor tempus sapien. Nunc eu lorem est. Mauris in elit semper, iaculis dui eget, condimentum nisi. Vivamus id euismod dui. Praesent eget ultrices felis. Sed non elementum sapien. Curabitur vestibulum ligula eu lacus vehicula efficitur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="p-4 mt-3 text-muted border-top bg-light">
+        <div class="row">
+          <div class="col">
+            <h6>Company</h6>
+            <ul class="ps-0">
+              <li><a href="#">Tax</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Shipping Options</a></li>
+              <li><a href="#">Method of Payment</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h6>Support</h6>
+            <ul class="ps-0">
+              <li><a href="#">An item</a></li>
+              <li><a href="#">A second item</a></li>
+              <li><a href="#">A third item</a></li>
+              <li><a href="#">A fourth item</a></li>
+              <li><a href="#">And a fifth one</a></li>
+            </ul>
+          </div>
+          <div class="col"">
+            <h6>Resources</h6>
+            <ul class="ps-0">
+              <li><a href="#">An item</a></li>
+              <li><a href="#">A second item</a></li>
+              <li><a href="#">A third item</a></li>
+              <li><a href="#">A fourth item</a></li>
+              <li><a href="#">And a fifth one</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            Comments or questions?
+          </div>
+        </div>
+        <small class="text-muted">&copy; karkareco.com 2021</small>
+      </footer>
+    </div>
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
